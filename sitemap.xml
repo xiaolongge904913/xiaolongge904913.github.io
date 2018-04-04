@@ -3,13 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://www.xiaolongge.com.cn/post/helloworld/</loc>
-    <lastmod>2018-04-04T11:09:31+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.xiaolongge.com.cn/post/helloworld2/</loc>
-    <lastmod>2018-04-04T11:09:31+08:00</lastmod>
+    <loc>http://www.xiaolongge.com.cn/post/%E9%9B%86%E7%BE%A4ssh%E9%85%8D%E7%BD%AE/</loc>
+    <lastmod>2018-04-04T16:16:12+08:00</lastmod>
   </url>
   
   <url>
@@ -18,26 +13,32 @@
   </url>
   
   <url>
-    <loc>http://www.xiaolongge.com.cn/tags/hello/</loc>
-    <lastmod>2018-04-04T11:09:31+08:00</lastmod>
+    <loc>http://www.xiaolongge.com.cn/tags/linux/</loc>
+    <lastmod>2018-04-04T16:16:12+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.xiaolongge.com.cn/post/</loc>
-    <lastmod>2018-04-04T11:09:31+08:00</lastmod>
+    <lastmod>2018-04-04T16:16:12+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.xiaolongge.com.cn/tags/ssh/</loc>
+    <lastmod>2018-04-04T16:16:12+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.xiaolongge.com.cn/tags/</loc>
-    <lastmod>2018-04-04T11:09:31+08:00</lastmod>
+    <lastmod>2018-04-04T16:16:12+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.xiaolongge.com.cn/</loc>
-    <lastmod>2018-04-04T11:09:31+08:00</lastmod>
+    <lastmod>2018-04-04T16:16:12+08:00</lastmod>
     <priority>0</priority>
   </url>
   

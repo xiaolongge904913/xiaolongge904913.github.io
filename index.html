@@ -5,8 +5,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  	<meta property="og:title" content=" 小龙哥的博客" />
-  	<meta property="og:site_name" content="小龙哥的博客" />
+  	<meta property="og:title" content=" 小龙哥的技术人生" />
+  	<meta property="og:site_name" content="小龙哥的技术人生" />
   	<meta property="og:url" content="http://www.xiaolongge.com.cn/" />
     
     
@@ -14,10 +14,10 @@
     
 
   <title>
-     小龙哥的博客
+     小龙哥的技术人生
   </title>
 
-    <meta name="description" content="开源使我们更强大,更快乐." />
+    <meta name="description" content="我们这个世界的一个问题是，蠢人信誓旦旦，智人满腹狐疑" />
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -32,7 +32,7 @@
     
       
       
-        <link href="http://www.xiaolongge.com.cn/index.xml" rel="alternate" type="application/rss+xml" title="小龙哥的博客" />
+        <link href="http://www.xiaolongge.com.cn/index.xml" rel="alternate" type="application/rss+xml" title="小龙哥的技术人生" />
       
     
     <meta name="generator" content="Hugo 0.38" />
@@ -67,9 +67,9 @@
 <div class="vertical">
         <div class="main-header-content inner">
             <h1 class="page-title">
-              <a class="btn-bootstrap-2 title-scroll" href="#content">小龙哥的博客</a>
+              <a class="btn-bootstrap-2 title-scroll" href="#content">小龙哥的技术人生</a>
           </h1>
-          <h2 class="page-description">开源使我们更强大,更快乐.</h2>
+          <h2 class="page-description">我们这个世界的一个问题是，蠢人信誓旦旦，智人满腹狐疑</h2>
         </div>
 </div>
     <a class="scroll-down icon-arrow-left" href="#content"><span class="hidden">Scroll Down</span></a>
@@ -92,49 +92,58 @@
         
 <article class="post post">
     <header class="post-header">
-        <h2 class="post-title"><a href="/post/helloworld/">Hello World</a></h2>
+        <h2 class="post-title"><a href="/post/%E9%9B%86%E7%BE%A4ssh%E9%85%8D%E7%BD%AE/">企业级大数据实战之路(3)---集群SSH配置</a></h2>
     </header>
     <section class="post-excerpt">
       <p>
           <section class="post-content">
             
 
-<h2 id="welcome-to-github-pages">Welcome to GitHub Pages</h2>
-
-<p>You can use the <a href="https://github.com/xiaolongge904913/xiaolongge904913.github.io/edit/master/index.md">editor on GitHub</a> to maintain and preview the content for your website in Markdown files.</p>
-
-<p>Whenever you commit to this repository, GitHub Pages will run <a href="https://jekyllrb.com/">Jekyll</a> to rebuild the pages in your site, from the content in your Markdown files.</p>
-
-<h3 id="markdown">Markdown</h3>
-
-<p>Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for</p>
-
-<pre><code class="language-markdown">Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+<pre><code>本文档旨在为集群间的root用户建立ssh互信,其他用户均可通用本方法.
 </code></pre>
 
-<p>For more details see <a href="https://guides.github.com/features/mastering-markdown/">GitHub Flavored Markdown</a>.</p>
+<h5 id="配置hadoop01免密登录hadoop02">配置hadoop01免密登录hadoop02:</h5>
 
-<h3 id="jekyll-themes">Jekyll Themes</h3>
+<ol>
+<li><p>先要删除hadoop01节点root用户目录下的.ssh文件</p>
 
-<p>Your Pages site will use the layout and styles from the Jekyll theme you have selected in your <a href="https://github.com/xiaolongge904913/xiaolongge904913.github.io/settings">repository settings</a>. The name of this theme is saved in the Jekyll <code>_config.yml</code> configuration file.</p>
+<pre><code class="language-bash">[root@hadoop01 ~]# rm -rf  ~/.ssh/
+</code></pre></li>
 
-<h3 id="support-or-contact">Support or Contact</h3>
+<li><p>生成hadoop01的公钥与私钥</p>
 
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/categories/github-pages-basics/">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+<pre><code class="language-bash">[root@hadoop01 ~]# ssh-keygen -t rsa
+</code></pre>
+
+<p>遇到确认,点击回车均可,最后结果如下:
+<img src="images/集群SSH配置/1.png" alt="1" /></p></li>
+
+<li><p>将公钥发送至hadoop02</p>
+
+<pre><code class="language-bash">[root@hadoop01 ~]# ssh-copy-id -i ~/.ssh/id_rsa.pub hadoop02
+</code></pre>
+
+<p>输入hadoop02的密码,点击回车.此时,hadoop01可以免密登录hadoop02,结果如下:
+<img src="images/集群SSH配置/2.png" alt="2" /></p></li>
+
+<li><p>验证是否成功</p>
+
+<pre><code class="language-bash">[root@hadoop01 ~]# ssh hadoop02
+</code></pre>
+
+<p>成功:
+<img src="images/集群SSH配置/3.png" alt="3" /></p></li>
+</ol>
+
+<p>至此,hadoop01免密登录hadoop02成功.</p>
+
+<h5 id="配置hadoop01免密登录其他节点">配置Hadoop01免密登录其他节点:</h5>
+
+<p>hadoop01免密登录其他主机方法,重复执行上述操作即可,最后可实现hadoop01免密登录所有节点;</p>
+
+<h5 id="配置所有节点双向免密登录">配置所有节点双向免密登录:</h5>
+
+<p>Hadoop02-hadoop14免密登录其他主机方法也同上;</p>
 
           </section>
       </p>
@@ -149,80 +158,12 @@
         
         on
             
-                <a href="http://www.xiaolongge.com.cn/tags/hello/">#hello</a>,
+                <a href="http://www.xiaolongge.com.cn/tags/ssh/">#ssh</a>,
+            
+                <a href="http://www.xiaolongge.com.cn/tags/linux/">#linux</a>,
             
         
-        <time class="post-date" datetime="2018-04-04T11:09:31&#43;08:00">
-            4 Apr 2018
-        </time>
-    </footer>
-</article>
-
-    
-        
-<article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/post/helloworld2/">Hello World 2</a></h2>
-    </header>
-    <section class="post-excerpt">
-      <p>
-          <section class="post-content">
-            
-
-<h2 id="welcome-to-github-pages">Welcome to GitHub Pages</h2>
-
-<p>You can use the <a href="https://github.com/xiaolongge904913/xiaolongge904913.github.io/edit/master/index.md">editor on GitHub</a> to maintain and preview the content for your website in Markdown files.</p>
-
-<p>Whenever you commit to this repository, GitHub Pages will run <a href="https://jekyllrb.com/">Jekyll</a> to rebuild the pages in your site, from the content in your Markdown files.</p>
-
-<h3 id="markdown">Markdown</h3>
-
-<p>Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for</p>
-
-<pre><code class="language-markdown">Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-</code></pre>
-
-<p>For more details see <a href="https://guides.github.com/features/mastering-markdown/">GitHub Flavored Markdown</a>.</p>
-
-<h3 id="jekyll-themes">Jekyll Themes</h3>
-
-<p>Your Pages site will use the layout and styles from the Jekyll theme you have selected in your <a href="https://github.com/xiaolongge904913/xiaolongge904913.github.io/settings">repository settings</a>. The name of this theme is saved in the Jekyll <code>_config.yml</code> configuration file.</p>
-
-<h3 id="support-or-contact">Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/categories/github-pages-basics/">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
-
-          </section>
-      </p>
-      
-    </section>
-    <footer class="post-meta">
-        
-            <img class="author-thumb" src="http://www.xiaolongge.com.cn/images/%e5%a4%b4%e5%83%8f.jpg" alt="Author image" nopin="nopin" />
-        
-        
-            小龙哥
-        
-        on
-            
-                <a href="http://www.xiaolongge.com.cn/tags/hello/">#hello</a>,
-            
-        
-        <time class="post-date" datetime="2018-04-04T11:09:31&#43;08:00">
+        <time class="post-date" datetime="2018-04-04T16:16:12&#43;08:00">
             4 Apr 2018
         </time>
     </footer>
@@ -240,7 +181,7 @@
 </main>
 
     <footer class="site-footer clearfix">
-        <section class="copyright"><a href="">小龙哥的博客</a> All rights reserved - 2018</section>
+        <section class="copyright"><a href="">小龙哥的技术人生</a> All rights reserved - 2018</section>
         
         <section class="poweredby">Proudly generated by <a class="icon-hugo" href="https://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/syui/hugo-theme-air">hugo-theme-air</a> theme</section>
         

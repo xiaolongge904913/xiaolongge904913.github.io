@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>小龙哥的技术人生</title>
-    <link>http://www.xiaolongge.com.cn/</link>
-    <description>Recent content on 小龙哥的技术人生</description>
+    <title>Ssh on 小龙哥的技术人生</title>
+    <link>http://www.xiaolongge.com.cn/tags/ssh/</link>
+    <description>Recent content in Ssh on 小龙哥的技术人生</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2018</copyright>
     <lastBuildDate>Wed, 04 Apr 2018 16:16:12 +0800</lastBuildDate>
     
-	<atom:link href="http://www.xiaolongge.com.cn/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.xiaolongge.com.cn/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
