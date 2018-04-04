@@ -1,41 +1,65 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
 <head>
+
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  	<meta property="og:title" content=" 企业级大数据实战之路(3)---集群SSH配置 &middot;  小龙哥的技术人生" />
+    
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="企业级大数据实战之路(3)---集群SSH配置"/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@"/>
+
+
+
+  	<meta property="og:title" content="企业级大数据实战之路(3)---集群SSH配置 &middot; 小龙哥的技术人生" />
   	<meta property="og:site_name" content="小龙哥的技术人生" />
   	<meta property="og:url" content="http://www.xiaolongge.com.cn/post/%E9%9B%86%E7%BE%A4ssh%E9%85%8D%E7%BD%AE/" />
+
     
+        
+            <meta property="og:image" content="/images/cover_polenord.jpg"/>
+        
     
+
+    
+    <meta property="og:description" content="" />
   	<meta property="og:type" content="article" />
-
-    <meta property="og:article:published_time" content="2018-04-04T16:16:12&#43;08:00" />
+    <meta property="article:published_time" content="2018-04-04T16:16:12&#43;08:00" />
 
     
-    <meta property="og:article:tag" content="ssh" />
+    <meta property="article:tag" content="ssh" />
     
-    <meta property="og:article:tag" content="linux" />
+    <meta property="article:tag" content="linux" />
     
     
 
-  <title>
-     企业级大数据实战之路(3)---集群SSH配置 &middot;  小龙哥的技术人生
-  </title>
+    <title>企业级大数据实战之路(3)---集群SSH配置 &middot; 小龙哥的技术人生</title>
 
-    <meta name="description" content="我们这个世界的一个问题是，蠢人信誓旦旦，智人满腹狐疑" />
+    
+    <meta name="description" content="本文档旨在为集群间的root用户建立ssh互信,其他用户均可通用本方法.  配置hadoop01免密登录hadoop02:  先要删除hadoop01节点root用户目录下的.ssh文件
+[root@hadoop01 ~]# rm -rf ~/.ssh/  生成hadoop01的公钥与私钥
+[root@hadoop01" />
+    
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="shortcut icon" href="http://www.xiaolongge.com.cn/images/favicon.ico">
 	  <link rel="apple-touch-icon" href="http://www.xiaolongge.com.cn/images/apple-touch-icon.png" />
-    
-    <link rel="stylesheet" type="text/css" href="http://www.xiaolongge.com.cn/css/screen.css" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
 
+    <link rel="stylesheet" type="text/css" href="http://www.xiaolongge.com.cn/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://www.xiaolongge.com.cn/css/nav.css" />
+
+    
+
+    
 
     
       
@@ -48,55 +72,147 @@
     <link rel="canonical" href="http://www.xiaolongge.com.cn/post/%E9%9B%86%E7%BE%A4ssh%E9%85%8D%E7%BD%AE/" />
 
     
-<div id="particles-js"></div>
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script src="http://www.xiaolongge.com.cn/js/particles.js"></script>   
+      
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": ,
+        "logo": http://www.xiaolongge.com.cn/images/头像.jpg
+    },
+    "author": {
+        "@type": "Person",
+        "name": ,
+        
+        "image": {
+            "@type": "ImageObject",
+            "url": http://www.xiaolongge.com.cn/images/头像.jpg,
+            "width": 250,
+            "height": 250
+        }, 
+        
+        "url": https://www.xiaolongge.com.cn/,
+        "sameAs": [
+            
+            
+             
+             
+             
+             
+             
+            
+        ],
+        "description": Java Engineer, Open source enthusiast.
+        
+    },
+    "headline": 企业级大数据实战之路(3)---集群SSH配置,
+    "name": 企业级大数据实战之路(3)---集群SSH配置,
+    "wordCount": 34,
+    "timeRequired": "PT1M",
+    "inLanguage": {
+      "@type": "Language",
+      "alternateName": en
+    },
+    "url": http://www.xiaolongge.com.cn/post/%E9%9B%86%E7%BE%A4ssh%E9%85%8D%E7%BD%AE/,
+    "datePublished": 2018-04-04T16:16Z,
+    "dateModified": 2018-04-04T16:16Z,
+    
+    "keywords": ssh, linux,
+    "description": ,
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": http://www.xiaolongge.com.cn/post/%E9%9B%86%E7%BE%A4ssh%E9%85%8D%E7%BD%AE/
+    }
+}
+    </script>
+    
+
+
+    
+
+    
+
+    
 </head>
 <body class="nav-closed">
 
-  
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            <h3>Contact me</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://github.com/xiaolongge904913">Keybase (secure msg)</a>
+            </li>
+        
+            <h3>Follow me</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://github.com/xiaolongge904913">Github repos</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="http://www.xiaolongge.com.cn/">Blog</a>
+            </li>
+        
+        
+    </ul>
+
+    
+    <a class="subscribe-button icon-feed" href="http://www.xiaolongge.com.cn/index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
 
 
  <div class="site-wrapper">
 
 
 
-<header class="main-header " style="background-image: url(http://www.xiaolongge.com.cn/images/user.jpg)">
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
 
-    <nav class="main-nav overlay clearfix">
-        
-            <a class="blog-logo" href="http://www.xiaolongge.com.cn/"><img src="http://www.xiaolongge.com.cn/images/%e5%a4%b4%e5%83%8f.jpg" alt="Blog Logo" /></a>
-        
-        
-    </nav>
-<div class="vertical">
-        <div class="main-header-content inner">
-            <h1 class="page-title">
-              <a class="btn-bootstrap-2" href="#content">小龙哥的技术人生</a>
-          </h1>
-          <h2 class="page-description">我们这个世界的一个问题是，蠢人信誓旦旦，智人满腹狐疑</h2>
-        </div>
-</div>
-    <a class="scroll-down icon-arrow-left" href="#content"><span class="hidden">Scroll Down</span></a>
+
+  
+      <a class="blog-logo" href="http://www.xiaolongge.com.cn/"><img src="http://www.xiaolongge.com.cn/images/%e5%a4%b4%e5%83%8f.jpg" alt="Home" /></a>
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
 </header>
 
-  <main id="content" class="content" role="main">
+
+
+<main class="content" role="main">
+
+
 
 
   <article class="post post">
 
     <header class="post-header">
         <h1 class="post-title">企业级大数据实战之路(3)---集群SSH配置</h1>
+        <small></small>
+
         <section class="post-meta">
         
-	<time class="post-date" datetime="2018-04-04">
-            2018-04-04
+          <time class="post-date" datetime="2018-04-04T16:16:12&#43;08:00">
+            Apr 4, 2018
           </time>
         
          
-          <span class="post-tag small"><a href="http://www.xiaolongge.com.cn/tags/ssh/">#ssh</a></span>
+          <span class="post-tag small"><a href="http://www.xiaolongge.com.cn//tags/ssh/">#ssh</a></span>
          
-          <span class="post-tag small"><a href="http://www.xiaolongge.com.cn/tags/linux/">#linux</a></span>
+          <span class="post-tag small"><a href="http://www.xiaolongge.com.cn//tags/linux/">#linux</a></span>
          
         </section>
     </header>
@@ -157,68 +273,109 @@
 
 
     
-    <figure class="author-image">
 
-        <a class="img" href="http://www.xiaolongge.com.cn/" style="background-image: url(http://www.xiaolongge.com.cn/images/%e5%a4%b4%e5%83%8f.jpg)"><span class="hidden">小龙哥</span></a>
-    </figure>
-    
 
-    <section class="author">
 
-  <p>小龙哥</p>
+
+
+
+
+
+<figure class="author-image">
+    <a class="img" href="http://www.xiaolongge.com.cn/" style="background-image: url(/images/%e5%a4%b4%e5%83%8f.jpg)"><span class="hidden">小龙哥's Picture</span></a>
+</figure>
+
+
+<section class="author">
+  <h4><a href="http://www.xiaolongge.com.cn/">小龙哥</a></h4>
   
-
+  <p>Java Engineer, Open source enthusiast.</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Beijing, China</span>
+    <span class="author-link icon-link"><a href="https://www.xiaolongge.com.cn/">https://www.xiaolongge.com.cn/</a></span>
+  </div>
 </section>
 
 
-    
-    <section class="share">
-      <h4>Share this post</h4>
-      <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=%e4%bc%81%e4%b8%9a%e7%ba%a7%e5%a4%a7%e6%95%b0%e6%8d%ae%e5%ae%9e%e6%88%98%e4%b9%8b%e8%b7%af%283%29---%e9%9b%86%e7%be%a4SSH%e9%85%8d%e7%bd%ae&amp;url=http%3a%2f%2fwww.xiaolongge.com.cn%2fpost%2f%25E9%259B%2586%25E7%25BE%25A4ssh%25E9%2585%258D%25E7%25BD%25AE%2f"
-          onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-          <span class="hidden">Twitter</span>
-      </a>
-      <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fwww.xiaolongge.com.cn%2fpost%2f%25E9%259B%2586%25E7%25BE%25A4ssh%25E9%2585%258D%25E7%25BD%25AE%2f"
-          onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-          <span class="hidden">Facebook</span>
-      </a>
-      <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2fwww.xiaolongge.com.cn%2fpost%2f%25E9%259B%2586%25E7%25BE%25A4ssh%25E9%2585%258D%25E7%25BD%25AE%2f"
-         onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-          <span class="hidden">Google+</span>
-      </a>
-    </section>
-    
+
 
     
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=%e4%bc%81%e4%b8%9a%e7%ba%a7%e5%a4%a7%e6%95%b0%e6%8d%ae%e5%ae%9e%e6%88%98%e4%b9%8b%e8%b7%af%283%29---%e9%9b%86%e7%be%a4SSH%e9%85%8d%e7%bd%ae&nbsp;-&nbsp;%e5%b0%8f%e9%be%99%e5%93%a5%e7%9a%84%e6%8a%80%e6%9c%af%e4%ba%ba%e7%94%9f&amp;url=http%3a%2f%2fwww.xiaolongge.com.cn%2fpost%2f%25E9%259B%2586%25E7%25BE%25A4ssh%25E9%2585%258D%25E7%25BD%25AE%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fwww.xiaolongge.com.cn%2fpost%2f%25E9%259B%2586%25E7%25BE%25A4ssh%25E9%2585%258D%25E7%25BD%25AE%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=http%3a%2f%2fwww.xiaolongge.com.cn%2fpost%2f%25E9%259B%2586%25E7%25BE%25A4ssh%25E9%2585%258D%25E7%25BD%25AE%2f&amp;description=%e4%bc%81%e4%b8%9a%e7%ba%a7%e5%a4%a7%e6%95%b0%e6%8d%ae%e5%ae%9e%e6%88%98%e4%b9%8b%e8%b7%af%283%29---%e9%9b%86%e7%be%a4SSH%e9%85%8d%e7%bd%ae"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2fwww.xiaolongge.com.cn%2fpost%2f%25E9%259B%2586%25E7%25BE%25A4ssh%25E9%2585%258D%25E7%25BD%25AE%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
     
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-      var disqus_shortname = '小龙哥';
-      (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    
-    
+
+<div id="disqus_thread"></div>
+<script>
+
+
+
+
+var disqus_config = function () {
+this.page.url = "http:\/\/www.xiaolongge.com.cn\/post\/%E9%9B%86%E7%BE%A4ssh%E9%85%8D%E7%BD%AE\/";  
+this.page.identifier = "http:\/\/www.xiaolongge.com.cn\/post\/%E9%9B%86%E7%BE%A4ssh%E9%85%8D%E7%BD%AE\/"; 
+};
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://小龙哥.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
+
 
   </footer>
 </article>
 
 </main>
+
+
+  <aside class="read-next">
+  
+  
+</aside>
+
+
+
     <footer class="site-footer clearfix">
         <section class="copyright"><a href="">小龙哥的技术人生</a> All rights reserved - 2018</section>
         
-        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="https://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/syui/hugo-theme-air">hugo-theme-air</a> theme</section>
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
         
     </footer>
     </div>
     <script type="text/javascript" src="http://www.xiaolongge.com.cn/js/jquery.js"></script>
     <script type="text/javascript" src="http://www.xiaolongge.com.cn/js/jquery.fitvids.js"></script>
     <script type="text/javascript" src="http://www.xiaolongge.com.cn/js/index.js"></script>
-
+    
 </body>
 </html>
 
