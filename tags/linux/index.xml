@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on 小龙哥的技术人生</title>
+    <link>http://www.xiaolongge.com.cn/tags/linux/</link>
+    <description>Recent content in Linux on 小龙哥的技术人生</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved - 2018</copyright>
+    <lastBuildDate>Wed, 04 Apr 2018 16:16:12 +0800</lastBuildDate>
+    
+	<atom:link href="http://www.xiaolongge.com.cn/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>企业级大数据实战之路(3)---集群SSH配置</title>
+      <link>http://www.xiaolongge.com.cn/post/01_bigdata/%E9%9B%86%E7%BE%A4ssh%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Wed, 04 Apr 2018 16:16:12 +0800</pubDate>
+      
+      <guid>http://www.xiaolongge.com.cn/post/01_bigdata/%E9%9B%86%E7%BE%A4ssh%E9%85%8D%E7%BD%AE/</guid>
+      <description>本文档旨在为集群间的root用户建立ssh互信,其他用户均可通用本方法.  配置hadoop01免密登录hadoop02:  先要删除hadoop01节点root用户目录下的.ssh文件
+[root@hadoop01 ~]# rm -rf ~/.ssh/  生成hadoop01的公钥与私钥
+[root@hadoop01 ~]# ssh-keygen -t rsa  遇到确认,点击回车均可,最后结果如下:  将公钥发送至hadoop02
+[root@hadoop01 ~]# ssh-copy-id -i ~/.ssh/id_rsa.pub hadoop02  输入hadoop02的密码,点击回车.此时,hadoop01可以免密登录hadoop02,结果如下:  验证是否成功
+[root@hadoop01 ~]# ssh hadoop02  成功:   至此,hadoop01免密登录hadoop02成功.
+配置Hadoop01免密登录其他节点: hadoop01免密登录其他主机方法,重复执行上述操作即可,最后可实现hadoop01免密登录所有节点;
+配置所有节点双向免密登录: Hadoop02-hadoop14免密登录其他主机方法也同上;</description>
+    </item>
+    
+  </channel>
+</rss>
