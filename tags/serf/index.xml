@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Serf on Valère JEANTET</title>
+    <link>http://vjeantet.fr/tags/serf/</link>
+    <description>Recent content in Serf on Valère JEANTET</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language>
+    <copyright>All rights reserved</copyright>
+    <lastBuildDate>Sat, 08 Feb 2014 21:48:08 +0100</lastBuildDate>
+    
+	<atom:link href="http://vjeantet.fr/tags/serf/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Serf agent to join cluster on start</title>
+      <link>http://vjeantet.fr/keep-serf-agent-alive-while-failing-to-join-cluster/</link>
+      <pubDate>Sat, 08 Feb 2014 21:48:08 +0100</pubDate>
+      
+      <guid>http://vjeantet.fr/keep-serf-agent-alive-while-failing-to-join-cluster/</guid>
+      <description>Serf is a decentralized solution for service discovery and orchestration that is lightweight, highly available, and fault tolerant.
+ Tell a serf agent to join a node on start Using serf config file -config-file you can indicate to your starting serf agent to join a specific node.
+&amp;quot;start_join&amp;quot;:[&amp;quot;node2_host&amp;quot;],
+You even can indicate multiple nodes :
+&amp;quot;start_join&amp;quot;:[&amp;quot;node2_host&amp;quot;,&amp;quot;node3_host&amp;quot;]
+If node2_host and node3_host are not available, your agent will terminate.
+Keep agent alive, even if joinning nodes failed.</description>
+    </item>
+    
+  </channel>
+</rss>

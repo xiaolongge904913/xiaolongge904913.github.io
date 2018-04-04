@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Golang on Valère JEANTET</title>
+    <link>http://vjeantet.fr/tags/golang/</link>
+    <description>Recent content in Golang on Valère JEANTET</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language>
+    <copyright>All rights reserved</copyright>
+    <lastBuildDate>Wed, 05 Feb 2014 23:35:08 +0100</lastBuildDate>
+    
+	<atom:link href="http://vjeantet.fr/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>GOlang, chez Google</title>
+      <link>http://vjeantet.fr/golang-chez-google/</link>
+      <pubDate>Wed, 05 Feb 2014 23:35:08 +0100</pubDate>
+      
+      <guid>http://vjeantet.fr/golang-chez-google/</guid>
+      <description>Ce soir une petite session meetup GOLANG, animée par un ingénieur de chez Google US. Très sympa, pas trop formel et dans un français presque parfait, Francesc Campoy Flores a découvert un petit groupe de passionnés, professionnels ou curieux du langage GO.
+Il fallait y être ce soir : liste d&amp;rsquo;attente, contrôle sécurité, signalétique android, salles ultramodernes, bref c&amp;rsquo;était dans les locaux de Google France, une attraction rien qu&amp;rsquo;à eux !</description>
+    </item>
+    
+  </channel>
+</rss>

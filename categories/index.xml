@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on 小龙哥的技术人生</title>
-    <link>http://www.xiaolongge.com.cn/categories/</link>
-    <description>Recent content in Categories on 小龙哥的技术人生</description>
+    <title>Categories on Valère JEANTET</title>
+    <link>http://vjeantet.fr/categories/</link>
+    <description>Recent content in Categories on Valère JEANTET</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>All rights reserved - 2018</copyright>
+    <language>fr-FR</language>
+    <copyright>All rights reserved</copyright>
     
-	<atom:link href="http://www.xiaolongge.com.cn/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://vjeantet.fr/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

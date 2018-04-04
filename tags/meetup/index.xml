@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Meetup on Valère JEANTET</title>
+    <link>http://vjeantet.fr/tags/meetup/</link>
+    <description>Recent content in Meetup on Valère JEANTET</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language>
+    <copyright>All rights reserved</copyright>
+    <lastBuildDate>Tue, 15 Apr 2014 23:58:00 +0200</lastBuildDate>
+    
+	<atom:link href="http://vjeantet.fr/tags/meetup/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Meetup pre-devoxx GoogleDevGroup Paris</title>
+      <link>http://vjeantet.fr/meetup-pre-devoxx-googledevgroup-paris/</link>
+      <pubDate>Tue, 15 Apr 2014 23:58:00 +0200</pubDate>
+      
+      <guid>http://vjeantet.fr/meetup-pre-devoxx-googledevgroup-paris/</guid>
+      <description>Bonne petite soirée le meetup Google Developer Group, une salle aux sieges confortables, et des speakers de qualité.
+Meetup #GDG donc, pré Devoxx.
+1er Talk - Go Francesc Campoy Flores (@francesc) , membre de la Go Team chez Google nous a parlé de go, de la concurrence, 80% de l&amp;rsquo;audience connais Go. 2 chanceux ont finis le talk avec un gaufre, Gopher, dans les bras (la peluche).
+Le système de slide utilisé pour les sujet go, fait toujours sensation, avec l&amp;rsquo;exécution de bout de code directement dans le slide :-).</description>
+    </item>
+    
+    <item>
+      <title>Docker.io Paris MEETUP #5</title>
+      <link>http://vjeantet.fr/docker-io-paris-meetup-5/</link>
+      <pubDate>Fri, 14 Feb 2014 09:13:00 +0100</pubDate>
+      
+      <guid>http://vjeantet.fr/docker-io-paris-meetup-5/</guid>
+      <description>Veille de saint Valentin 2014, les curieux, passionnés et amoureux de Docker se sont rencontrés encore une fois pour échanger leurs expériences autour de Docker.io
+ Docker n.m. (Début XXIe).
+I. un projet open source pour packager, livrer et démarrer n&amp;rsquo;importe quelle application dans un conteneur léger.
+ La startup Nuxeo nous a accueilli dans ses locaux juste après le boulot, avec tout le matériel nécessaire, bonne humeur, bière, sodas, chips etc.</description>
+    </item>
+    
+    <item>
+      <title>GOlang, chez Google</title>
+      <link>http://vjeantet.fr/golang-chez-google/</link>
+      <pubDate>Wed, 05 Feb 2014 23:35:08 +0100</pubDate>
+      
+      <guid>http://vjeantet.fr/golang-chez-google/</guid>
+      <description>Ce soir une petite session meetup GOLANG, animée par un ingénieur de chez Google US. Très sympa, pas trop formel et dans un français presque parfait, Francesc Campoy Flores a découvert un petit groupe de passionnés, professionnels ou curieux du langage GO.
+Il fallait y être ce soir : liste d&amp;rsquo;attente, contrôle sécurité, signalétique android, salles ultramodernes, bref c&amp;rsquo;était dans les locaux de Google France, une attraction rien qu&amp;rsquo;à eux !</description>
+    </item>
+    
+  </channel>
+</rss>

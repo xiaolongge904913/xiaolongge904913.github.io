@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dotscale on Valère JEANTET</title>
+    <link>http://vjeantet.fr/tags/dotscale/</link>
+    <description>Recent content in Dotscale on Valère JEANTET</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language>
+    <copyright>All rights reserved</copyright>
+    <lastBuildDate>Fri, 11 Jul 2014 10:54:24 +0200</lastBuildDate>
+    
+	<atom:link href="http://vjeantet.fr/tags/dotscale/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>dotScale 2014 as a sketch</title>
+      <link>http://vjeantet.fr/dotscale-2014-as-a-sketch/</link>
+      <pubDate>Fri, 11 Jul 2014 10:54:24 +0200</pubDate>
+      
+      <guid>http://vjeantet.fr/dotscale-2014-as-a-sketch/</guid>
+      <description>No enough time to write a summary of the last dotScale in Paris.
+I publish some graphical notes i&amp;rsquo;ve done during the event.
+ I know there is a missing H in &amp;ldquo;GITUB&amp;rdquo;, live notes are live notes&amp;hellip; :-)
+ </description>
+    </item>
+    
+  </channel>
+</rss>

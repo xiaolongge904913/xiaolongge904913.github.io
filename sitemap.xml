@@ -3,42 +3,282 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://www.xiaolongge.com.cn/post/%E9%9B%86%E7%BE%A4ssh%E9%85%8D%E7%BD%AE/</loc>
-    <lastmod>2018-04-04T16:16:12+08:00</lastmod>
+    <loc>http://vjeantet.fr/pgp/</loc>
+    <lastmod>2015-05-27T23:31:14+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.xiaolongge.com.cn/categories/</loc>
+    <loc>http://vjeantet.fr/security/asset-security/</loc>
+    <lastmod>2015-07-18T14:15:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/about/</loc>
+    <lastmod>2015-04-14T22:17:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/hackathon-societe-generale-agence-connectee/</loc>
+    <lastmod>2015-03-13T16:10:08+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/moving-from-ghost-to-hugo/</loc>
+    <lastmod>2015-03-02T16:08:29+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/hackathon-societe-generale-ii-sgconnectedhack/</loc>
+    <lastmod>2014-09-25T14:41:06+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/dotscale-2014-as-a-sketch/</loc>
+    <lastmod>2014-07-11T10:54:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/hackathon-gdfsuez/</loc>
+    <lastmod>2014-07-01T12:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/hackathon-global-summit-of-women/</loc>
+    <lastmod>2014-06-05T19:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/hackaton-societe-generale-jour-1/</loc>
+    <lastmod>2014-05-29T01:47:50+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/retour-dexperience-hackathon-societe-generale/</loc>
+    <lastmod>2014-05-28T13:54:54+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/osx-youre-talking-to-me/</loc>
+    <lastmod>2014-05-17T18:03:35+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/devoxx-france-2014-review/</loc>
+    <lastmod>2014-04-18T23:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/meetup-pre-devoxx-googledevgroup-paris/</loc>
+    <lastmod>2014-04-15T23:58:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/devoxxps/</loc>
+    <lastmod>2014-02-21T19:11:36+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/docker-io-paris-meetup-5/</loc>
+    <lastmod>2014-02-14T09:13:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/keep-serf-agent-alive-while-failing-to-join-cluster/</loc>
+    <lastmod>2014-02-08T21:48:08+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/golang-chez-google/</loc>
+    <lastmod>2014-02-05T23:35:08+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/et-on-repart/</loc>
+    <lastmod>2014-02-03T22:47:19+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/du-beau-temps-en-prevision-sur-leurope/</loc>
+    <lastmod>2008-05-30T12:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/metro-rigolo-comico-musicalo-boulot/</loc>
+    <lastmod>2007-11-02T18:14:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/nos-reperes/</loc>
+    <lastmod>2007-06-24T22:29:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/good-practice/</loc>
+    <lastmod>2007-06-14T22:28:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/octometre/</loc>
+    <lastmod>2006-11-23T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/80-la-minute/</loc>
+    <lastmod>2006-08-30T03:45:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/security/</loc>
+    <lastmod>2006-08-30T03:45:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/eboueur-de-code/</loc>
+    <lastmod>2006-08-09T21:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/le-design-pattern-500-ans-avant-jc/</loc>
+    <lastmod>2005-05-06T22:20:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/undesign-pattern/</loc>
+    <lastmod>2005-04-18T22:19:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/1-clavier-1-souris-et-plusieurs-machines/</loc>
+    <lastmod>2005-04-14T22:17:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/citation/</loc>
+    <lastmod>2005-02-14T22:08:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/tags/blog/</loc>
+    <lastmod>2014-02-03T22:47:19+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.xiaolongge.com.cn/tags/linux/</loc>
-    <lastmod>2018-04-04T16:16:12+08:00</lastmod>
+    <loc>http://vjeantet.fr/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.xiaolongge.com.cn/post/</loc>
-    <lastmod>2018-04-04T16:16:12+08:00</lastmod>
+    <loc>http://vjeantet.fr/tags/cest-dit/</loc>
+    <lastmod>2007-11-02T18:14:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.xiaolongge.com.cn/tags/ssh/</loc>
-    <lastmod>2018-04-04T16:16:12+08:00</lastmod>
+    <loc>http://vjeantet.fr/tags/cest-lu/</loc>
+    <lastmod>2008-05-30T12:00:00+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.xiaolongge.com.cn/tags/</loc>
-    <lastmod>2018-04-04T16:16:12+08:00</lastmod>
+    <loc>http://vjeantet.fr/tags/devops/</loc>
+    <lastmod>2014-02-21T19:11:36+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.xiaolongge.com.cn/</loc>
-    <lastmod>2018-04-04T16:16:12+08:00</lastmod>
+    <loc>http://vjeantet.fr/tags/devoxx/</loc>
+    <lastmod>2014-04-18T23:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/tags/docker/</loc>
+    <lastmod>2014-02-14T09:13:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/tags/dotscale/</loc>
+    <lastmod>2014-07-11T10:54:24+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/tags/event/</loc>
+    <lastmod>2015-03-13T16:10:08+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/tags/golang/</loc>
+    <lastmod>2014-02-05T23:35:08+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/tags/hackathon/</loc>
+    <lastmod>2015-03-13T16:10:08+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/tags/iot/</loc>
+    <lastmod>2014-09-25T14:41:06+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/tags/meetup/</loc>
+    <lastmod>2014-04-15T23:58:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/post/</loc>
+    <lastmod>2015-03-13T16:10:08+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/security/</loc>
+    <lastmod>2015-07-18T14:15:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/tags/serf/</loc>
+    <lastmod>2014-02-08T21:48:08+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/tags/sketchnote/</loc>
+    <lastmod>2014-09-25T14:41:06+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/tags/socgen/</loc>
+    <lastmod>2015-03-13T16:10:08+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/tags/</loc>
+    <lastmod>2014-02-03T22:47:19+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/tags/tools/</loc>
+    <lastmod>2014-05-17T18:03:35+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://vjeantet.fr/</loc>
+    <lastmod>2015-05-27T23:31:14+02:00</lastmod>
     <priority>0</priority>
   </url>
   

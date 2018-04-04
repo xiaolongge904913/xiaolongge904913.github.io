@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Valère JEANTET</title>
+    <link>http://vjeantet.fr/tags/blog/</link>
+    <description>Recent content in Blog on Valère JEANTET</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language>
+    <copyright>All rights reserved</copyright>
+    <lastBuildDate>Mon, 03 Feb 2014 22:47:19 +0100</lastBuildDate>
+    
+	<atom:link href="http://vjeantet.fr/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>dotclear, wordpress, ghost !</title>
+      <link>http://vjeantet.fr/et-on-repart/</link>
+      <pubDate>Mon, 03 Feb 2014 22:47:19 +0100</pubDate>
+      
+      <guid>http://vjeantet.fr/et-on-repart/</guid>
+      <description>10 années que le blog existe, 6 ans que je n&amp;rsquo;ai pas &amp;ldquo;blogué&amp;rdquo; &amp;mdash; (effet Twitter ?)
+Je retente l&amp;rsquo;expérience, j&amp;rsquo;ai enormement de sujets en mode brouillons, des dizaines, aussi vieux que mes enfants.
+Et puis j&amp;rsquo;ai découvert GHOST, la nouvelle solution de blog open source, simple&amp;hellip; trés simple, mais efficace.
+Pas de commentaires possibles, pas de froufrou dans tous les sens, juste du contenu.
+Ce blog (dont la fréquentation approche tout doucement les 2 visites par jour) est containérisé et loadbalancé (HiPache) et containérisé (merci Docker).</description>
+    </item>
+    
+  </channel>
+</rss>
